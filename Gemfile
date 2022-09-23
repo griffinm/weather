@@ -13,6 +13,8 @@ gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'whenever', require: false
+gem 'rest-client'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 
