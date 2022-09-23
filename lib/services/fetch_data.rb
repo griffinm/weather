@@ -28,6 +28,7 @@ module Services
         yearly_rain: body["yearlyrainin"],
         uv_index: body["uv"],
         last_rain_at: body["lastRain"],
+        barometer: body["baromrelin"],
       )
     end
   end  

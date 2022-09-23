@@ -19,6 +19,7 @@ class CreateEvents < ActiveRecord::Migration[7.0]
       t.float :monthly_rain
       t.float :yearly_rain
       t.float :uv_index
+      t.float :barometer
       t.datetime :last_rain_at
 
       t.timestamps

@@ -33,6 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_23_175442) do
     t.float "monthly_rain"
     t.float "yearly_rain"
     t.float "uv_index"
+    t.float "barometer"
     t.datetime "last_rain_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
