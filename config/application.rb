@@ -4,14 +4,15 @@ require "rails"
 
 # This list is here as documentation only - it's not used
 omitted = %w(
-  action_cable/engine
-  action_mailbox/engine
-  action_text/engine
-  sprockets/railtie
+
   )
   
   # Only the frameworks in Rails that do not pollute our routes
   %w(
+    action_cable/engine
+    action_mailbox/engine
+    action_text/engine
+    sprockets/railtie
   action_mailer/railtie
   active_storage/engine
   active_record/railtie
