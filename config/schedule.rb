@@ -20,5 +20,5 @@
 # Learn more: http://github.com/javan/whenever
 
 every 5.minutes do
-  Services::FetchData.fetch
+  runner "Services::FetchData.fetch"
 end
