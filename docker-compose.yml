@@ -12,6 +12,34 @@ services:
     ports:
       - 5432:5432
 
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - bundle_cache:/usr/local/bundle
+      - .:/app
+    ports:
+      - 3001:3000
+    depends_on:
+      - db
+
+  web:
+    build:
+      context: ./ui/
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./ui/src:/app/src
+      - ./ui/public:/app/public
+      - node_modules:/node_modules
+    ports:
+      - 3000:3000
+    depends_on:
+      - app
+
 volumes:
   db:
     driver: local
+  node_modules:
+    driver: local
+  bundle_cache:
