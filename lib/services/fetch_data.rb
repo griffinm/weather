@@ -29,6 +29,7 @@ module Services
         uv_index: body["uv"],
         last_rain_at: body["lastRain"],
         barometer: body["baromrelin"],
+        solar_radiation: body["solarradiation"],
       )
     end
   end  
