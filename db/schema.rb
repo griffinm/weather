@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_30_172352) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_22_000057) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -38,6 +38,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_30_172352) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.float "solar_radiation"
+    t.float "chloe_temp"
+    t.float "chloe_humidity"
+    t.float "aubrey_temp"
+    t.float "aubrey_humidity"
+    t.float "master_temp"
+    t.float "master_humidity"
+    t.float "mallory_office_temp"
+    t.float "mallory_office_humidity"
   end
 
 end
