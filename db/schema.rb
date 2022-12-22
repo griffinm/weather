@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_30_172352) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_22_122516) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "events", force: :cascade do |t|
     t.datetime "event_at"
-    t.float "indoor_temperature"
-    t.float "indoor_humidity"
+    t.float "griffin_office_temp"
+    t.float "griffin_office_humidity"
     t.float "temperature"
     t.float "feels_like"
     t.float "humidity"
@@ -38,6 +38,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_30_172352) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.float "solar_radiation"
+    t.float "chloe_temp"
+    t.float "chloe_humidity"
+    t.float "aubrey_temp"
+    t.float "aubrey_humidity"
+    t.float "master_temp"
+    t.float "master_humidity"
+    t.float "mallory_office_temp"
+    t.float "mallory_office_humidity"
   end
 
 end
